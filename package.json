@@ -1,0 +1,37 @@
+{
+  "name": "graphql-ts-anime",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon ./src/index.ts",
+    "build": "tsc",
+    "start": "node ./dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/axios": "^0.14.0",
+    "ts-standard": "^11.0.0"
+  },
+  "dependencies": {
+    "apollo-server": "^3.10.2",
+    "axios": "^0.27.2",
+    "graphql": "^16.6.0"
+  },
+  "eslintConfig": {
+    "parserOptions": {
+      "project": "./tsconfig.json"
+    },
+    "extends": [
+      "./node_modules/ts-standard/eslintrc.json"
+    ],
+    "rules": {
+      "@typescript-eslint/explicit-function-return-type": "off",
+      "@typescript-eslint/restrict-template-expressions": "error",
+      "@typescript-eslint/no-misused-promises": "off",
+      "@typescript-eslint/strict-boolean-expressions": "off"
+    }
+  }
+}
