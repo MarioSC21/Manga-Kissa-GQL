@@ -11,6 +11,7 @@ const server = new ApolloServer({
   resolvers,
   csrfPrevention: true,
   cache: 'bounded',
+  introspection: true,
   plugins: [
     ApolloServerPluginCacheControl({
       // Cache everything for 1 second by default.
