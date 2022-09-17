@@ -1,7 +1,8 @@
 import axios from 'axios'
+import config from '../config'
 import { IEndPointsUrlFenix } from '../types'
 
-export const urlFenix = 'http://localhost:3000'
+export const urlFenix = config.urlFenix
 
 export const endPointsUrlFenix: IEndPointsUrlFenix = {
   home: `${urlFenix}/home`,
